@@ -10,6 +10,10 @@ body{
 
 #ticket{
     background-color: blue;
-    
+
+}
+
+.radius{
+    border-radius: 25px;
 }
 

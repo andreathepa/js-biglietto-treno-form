@@ -11,58 +11,67 @@
     </head>
     <body>
         
-        <div class="container bg-info mt-5 border">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-around">
-                        <div class="form-group">
-                            <label for="" class="control-label">Nome e cognome</label>
-                            <input type="text" id="name" value="" class="form-control" placeholder="Nome e cognome">
+                    <div class="content radius bg-white mt-5 border">
+                        <div class="d-flex justify-content-around">
+                            <div class="form-group p-3">
+                                <label for="" class="control-label">Nome e cognome</label>
+                                <input type="text" id="name" value="" class="form-control" placeholder="Nome e cognome">
+                            </div>
+                            <div class="form-group p-3">
+                                <label for="" class="control-label">Km</label>
+                                <input type="number" min="0" name="nome" id="km" value="" class="form-control" placeholder="Inserisci i km da percorrere">
+                            </div>
+                            <div class="form-group p-3">
+                                <label for="" class="control-label">Age</label>
+                                <select id="age" class="form-control">
+                                    <option value="0">Maggiorenne</option>
+                                    <option value="1">Minorenne</option>
+                                    <option value="2">Over 65</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="" class="control-label">Km</label>
-                            <input type="number" min="0" name="nome" id="km" value="" class="form-control" placeholder="Inserisci i km da percorrere">
+                        <div class="d-flex justify-content-center p-3">
+                            <button id="invia" class="btn btn-sm btn-success mx-3">Calcola</button>
+                            <button id="annulla" class="btn btn-sm btn-success mx-3">Annulla</button>
                         </div>
-                        <div class="form-group">
-                            <label for="" class="control-label">Age</label>
-                            <select id="age" class="form-control">
-                                <option value="0">Maggiorenne</option>
-                                <option value="1">Minorenne</option>
-                                <option value="2">Over 65</option>
-                            </select>
-                        </div>
-
                     </div>
-                    <div class="d-flex justify-content-center p-3">
-                        <button id="invia" class="btn btn-sm btn-success">Send</button>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Km</th>
-                                <th>Age</th>
-                                <th>Discount</th>
-                                <th>price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th><span id="show-name"></span></th>
-                                <th><span id="show-km"></span></th>
-                                <th><span id="show-age"></span></th>
-                                <th><span id="show-discount"></span></th>
-                                <th><span id="show-price"></span></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div id="price"></div>
-
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <div class="content bg-white mt-5 border">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Km</th>
+                                    <th>Age</th>
+                                    <th>Discount</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><span id="show-name"></span></th>
+                                    <th><span id="show-km"></span></th>
+                                    <th><span id="show-age"></span></th>
+                                    <th><span id="show-discount"></span></th>
+                                    <th><span id="show-price"></span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
 
         
 
