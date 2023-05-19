@@ -13,24 +13,32 @@ button.addEventListener('click', function(){
 
     let message = '';
 
-    if (age === 0){
-        message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
-        discount_perc = '/';
-    }
-    else if (age === 1){
-        price *= 0.8;
-        discount_perc = '20%';
+    if(isNaN(km) === false){
 
-        message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
+        if (age === 0){
+            message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
+            discount_perc = '/';
+        }
+        else if (age === 1){
+            price *= 0.8;
+            discount_perc = '20%';
+
+            message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
+        }
+        else{
+            price *= 0.6;
+            discount_perc = '40%';
+
+            message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
+        }
+
+
     }
     else{
-        price *= 0.6;
-        discount_perc = '40%';
-
-        message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
+        message += 'Devi inserire i km da percorrere'
     }
 
     document.getElementById('price').innerText = message;
 
 
-})
+});
