@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(163, 44, 44);
+}
+
+#ticket{
+    background-color: blue;
+    
+}
+
