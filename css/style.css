@@ -24,3 +24,12 @@ body{
 .border_col{
     border: 1px solid #B91450;
 }
+
+
+.grey-back{
+    background-color: grey;
+}
+
+.col-bl{
+    color: black;
+}

@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
-                    <div class="content radius bg-white mt-2 border">
+                    <div class="content radius bg-white mt-2 border shadow-lg p-3 mb-5 rounded">
                         <div class="d-flex justify-content-center text-center">
                             <div class="form-group p-3">
                                 <label for="" class="control-label mb-1 text-b">Nome e cognome</label>
@@ -61,32 +61,47 @@
                 </div>
             </div>
         </div>
+
+
         
         
-        <div class="container">
+        
+        <div class="container mt-2">
             <div class="row justify-content-center">
-                <div class="col-10 p-3">
-                    <div class="content bg-white border">
-                        <table class="table">
-                            <thead>
-                                <tr class="h-75">
-                                    <th>Name</th>
-                                    <th>Km</th>
-                                    <th>Age</th>
-                                    <th>Discount</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="h-75">
-                                    <th class="bg-primary"><span id="show-name"></span></th>
-                                    <th><span id="show-km"></span></th>
-                                    <th><span id="show-age"></span></th>
-                                    <th><span id="show-discount"></span></th>
-                                    <th><span id="show-price"></span></th>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="col-10 border bg-white">
+                    <div class="content">
+                        <div class="mt-4"><h5>DETTAGLIO PASSEGGERI</h5></div>
+
+                        <div class="container mb-3">
+                            <div class="row justify-content-center">
+                                <div class="col border grey-back">
+                                    <div class="content mt-2">
+                                        <h5>NOME PASSEGGERO</h4>
+                                        <div id="show-name" class="text-white"></div>
+                                    </div>
+                                </div>
+                                <div class="col-9 border">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Km</th>
+                                                <th>Age</th>
+                                                <th>Discount</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><span id="show-km"></span></th>
+                                                <th><span id="show-age"></span></th>
+                                                <th><span id="show-discount"></span></th>
+                                                <th><span id="show-price"></span></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
