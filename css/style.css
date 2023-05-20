@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(163, 44, 44);
+    background-color: #B91450;
 }
 
 #ticket{
@@ -17,3 +17,10 @@ body{
     border-radius: 25px;
 }
 
+.text-b{
+    color: #B91450;
+}
+
+.border_col{
+    border: 1px solid #B91450;
+}

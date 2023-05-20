@@ -10,32 +10,42 @@
         <title>Biglietto treno form</title>
     </head>
     <body>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="content radius bg-white mt-5 border">
-                        <div class="d-flex justify-content-around">
+                    <div class="content-title text-center mt-3 text-white">
+                        <h1 class="fs-2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="content radius bg-white mt-2 border">
+                        <div class="d-flex justify-content-center text-center">
                             <div class="form-group p-3">
-                                <label for="" class="control-label">Nome e cognome</label>
-                                <input type="text" id="name" value="" class="form-control" placeholder="Nome e cognome">
+                                <label for="" class="control-label mb-1 text-b">Nome e cognome</label>
+                                <input type="text" id="name" value="" class="form-control text-center border_col" placeholder="Nome e cognome">
                             </div>
                             <div class="form-group p-3">
-                                <label for="" class="control-label">Km</label>
-                                <input type="number" min="0" name="nome" id="km" value="" class="form-control" placeholder="Inserisci i km da percorrere">
+                                <label for="" class="control-label mb-1 text-b">Km</label>
+                                <input type="number" min="0" name="nome" id="km" value="" class="form-control text-center border_col" placeholder="Inserisci i km da percorrere">
                             </div>
                             <div class="form-group p-3">
-                                <label for="" class="control-label">Age</label>
-                                <select id="age" class="form-control">
+                                <label for="" class="control-label text-center mb-1 text-b">Age</label>
+                                <select id="age" class="form-control border_col">
                                     <option value="0">Maggiorenne</option>
                                     <option value="1">Minorenne</option>
                                     <option value="2">Over 65</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center p-3">
-                            <button id="invia" class="btn btn-sm btn-success mx-3">Calcola</button>
-                            <button id="annulla" class="btn btn-sm btn-success mx-3">Annulla</button>
+                        <div class="d-flex justify-content-center p-4">
+                            <button id="invia" class="btn btn-light mx-3 text-b fs-6 border">Calcola</button>
+                            <button id="annulla" class="btn btn-light mx-3 text-b fs-6 border">Annulla</button>
                         </div>
                     </div>
                 </div>
@@ -44,11 +54,22 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 p-3">
-                    <div class="content bg-white mt-5 border">
+                <div class="col-12">
+                    <div class="content-title text-center mt-5 text-white">
+                        <h1 class="fs-2">IL TUO BIGLIETTO</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 p-3">
+                    <div class="content bg-white border">
                         <table class="table">
                             <thead>
-                                <tr>
+                                <tr class="h-75">
                                     <th>Name</th>
                                     <th>Km</th>
                                     <th>Age</th>
@@ -57,8 +78,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th><span id="show-name"></span></th>
+                                <tr class="h-75">
+                                    <th class="bg-primary"><span id="show-name"></span></th>
                                     <th><span id="show-km"></span></th>
                                     <th><span id="show-age"></span></th>
                                     <th><span id="show-discount"></span></th>
