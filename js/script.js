@@ -14,6 +14,10 @@ button.addEventListener('click', function(){
 
     let discount_perc;
 
+    let offerta;
+
+    let carrozza;
+
 
     let price = km * 0.21;
 
@@ -25,10 +29,14 @@ button.addEventListener('click', function(){
 
             // message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
             discount_perc = '/';
+            offerta = 'Standard';
+            carrozza = '5';
         }
         else if (age === 1){
             discount_perc = '20%';
             price *= 0.8;
+            offerta = 'Young';
+            carrozza = '3';
 
 
             // message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
@@ -36,16 +44,18 @@ button.addEventListener('click', function(){
         else{
             discount_perc = '40%';
             price *= 0.6;
+            offerta = 'Over-65';
+            carrozza = '1';
 
 
             // message += `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
         }
 
         document.getElementById('show-name').innerText = name;
-        document.getElementById('show-km').innerText = km;
-        document.getElementById('show-age').innerText = age;
+        document.getElementById('show-offerta').innerText = offerta;
+        document.getElementById('show-carrozza').innerText = carrozza;
         document.getElementById('show-discount').innerText = discount_perc;
-        document.getElementById('show-price').innerText = price;
+        document.getElementById('show-price').innerText = (price.toFixed(2)+'€');
 
 
     }
