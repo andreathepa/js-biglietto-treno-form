@@ -1,3 +1,4 @@
+"use strict"
 // MILESTONE 1:
 // Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console.
 
@@ -63,10 +64,20 @@ button.addEventListener('click', function(){
         message += 'Devi inserire i km da percorrere'
     }
 
-    
-
-    document.getElementById('price').innerText = message;
-
-
 });
+
+//Button annulla
+
+
+let button_annulla = document.getElementById('annulla');
+button_annulla.addEventListener("click", function(){
+
+    document.getElementById('show-name').innerText ='';
+
+    document.getElementById('show-carrozza').innerText ='';
+
+    document.getElementById('show-discount').innerText ='';
+
+    document.getElementById('show-price').innerText ='';
+})
 
